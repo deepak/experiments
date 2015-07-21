@@ -7,8 +7,10 @@ CC=clang
 
 $(P): $(OBJECTS)
 
+clean:
+	rm -rf $(P) $(P).dSYM
+
 # TODO
-# - make clean
 # - -o hello.out and add to gitignore
 # - c99 does not have -Wall ?
 # - syntax to override options
